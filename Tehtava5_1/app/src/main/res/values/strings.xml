@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tehtava5_1</string>
+    <string name="hitme">HitMe!</string>
+    <string name="reset">Reset</string>
+    <string name="creations">Creations</string>
+    <string name="visibles">Visibles</string>
+    <string name="hits">Hits</string>
+</resources>

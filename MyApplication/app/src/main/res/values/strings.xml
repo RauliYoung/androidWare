@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+<<<<<<< HEAD
+=======
+    <string name="my_name">Tristan Ellenberg</string>
+    <string name="change_name_button">Change name</string>
+>>>>>>> 7162eb8 (second commit)
 </resources>
