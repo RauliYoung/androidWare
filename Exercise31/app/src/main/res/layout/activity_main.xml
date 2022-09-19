@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="639dp"
+
+        />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:onClick="buttonPressed"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966" />
+
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:onClick="buttonPressed"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.677"
+        app:layout_constraintStart_toEndOf="@+id/buttonPlus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966" />
+
+    <RadioGroup
+        android:id="@+id/showHexBinDec"
+        android:layout_width="200dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPlus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioButton
+            android:id="@+id/radioButtonDec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dec" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hex" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:minHeight="48dp"
+            android:text="Bin"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <ImageView
+        android:id="@+id/buttonReset"
+        android:layout_width="119dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="70dp"
+        android:onClick="buttonPressed"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMinus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/resets"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
