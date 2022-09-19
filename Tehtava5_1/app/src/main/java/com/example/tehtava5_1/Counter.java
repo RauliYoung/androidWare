@@ -1,4 +1,4 @@
-package com.example.tehtv3;
+package com.example.tehtava5_1;
 
 public class Counter {
     private int maxValue;
@@ -13,6 +13,7 @@ public class Counter {
         this.minValue = minCount;
         this.startValue = startValue;
         this.steps = steps;
+        this.currentValue = startValue;
     }
 
     public Counter(){
@@ -42,7 +43,7 @@ public class Counter {
         return Integer.toString(currentValue);
     }
 
-    public void reset() {
+    public void reset(){
         this.currentValue = 0;
     }
 
