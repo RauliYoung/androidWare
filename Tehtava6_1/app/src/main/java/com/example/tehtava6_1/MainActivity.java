@@ -2,6 +2,7 @@ package com.example.tehtava6_1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String EXTRA_PRESIDENT_INFO = "com.example.tehtava6_1.PRESIDENT_DATA";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +33,11 @@ public class MainActivity extends AppCompatActivity {
         listViewPresidents.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //log i antaa kohteen listan sijainnin.
                 Log.i("item_click", "clicked " + i);
+                Intent nextActivity = new Intent(MainActivity.this, PresidentDetailsActivity.class);
+                nextActivity.putExtra(EXTRA_PRESIDENT_INFO, 0);
+                startActivity(nextActivity);
+
             }
         });
 

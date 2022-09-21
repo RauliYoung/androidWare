@@ -13,6 +13,22 @@ public class President {
         this.lempiNimi = lempiNimi;
     }
 
+    public String getNimi() {
+        return nimi;
+    }
+
+    public int getKaudenAlkuVuosi() {
+        return kaudenAlkuVuosi;
+    }
+
+    public int getKaudenLoppuVuosi() {
+        return kaudenLoppuVuosi;
+    }
+
+    public String getLempiNimi() {
+        return lempiNimi;
+    }
+
     @Override
     public String toString() {
         return this.nimi;
