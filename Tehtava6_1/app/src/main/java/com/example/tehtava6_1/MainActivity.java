@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Log.i("item_click", "clicked " + i);
                 Intent nextActivity = new Intent(MainActivity.this, PresidentDetailsActivity.class);
-                nextActivity.putExtra(EXTRA_PRESIDENT_INFO, 0);
+                nextActivity.putExtra(EXTRA_PRESIDENT_INFO, i);
                 startActivity(nextActivity);
 
             }
